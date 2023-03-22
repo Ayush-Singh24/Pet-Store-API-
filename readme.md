@@ -11,5 +11,31 @@ Deployed URL: https://ayush-pet-store.onrender.com
 
 ## Methods
 
-- `GET "/all"`\
-   Find all pets
+- `GET "/all"`<br>&nbsp;&nbsp;Find all pets
+- `PUSH "/"`<br>&nbsp;&nbsp;Adds new pet
+
+```
+{
+    "nameOfOwner": "Ayush",
+    "nameOfPet": "chintu",
+    "age": 19,
+    "type": "cat",
+    "gender": "female"
+}
+```
+
+- `PUT "/:id"`<br>&nbsp;&nbsp;Updates detail of a pet
+
+```
+{
+    "nameOfOwner": "Atul",
+    "nameOfPet": "pegasus",
+    "age": 23,
+    "type": "dog",
+    "gender": "male"
+}
+```
+
+- `GET "/:id"`<br>&nbsp;&nbsp; Finds a pet by ID
+
+- `DELETE "/:id"`<br>&nbsp;&nbsp; Deletes a pet by ID
