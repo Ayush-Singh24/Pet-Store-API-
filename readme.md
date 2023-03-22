@@ -12,7 +12,7 @@ Deployed URL: https://ayush-pet-store.onrender.com
 ## Methods
 
 - `GET "/all"`<br>&nbsp;&nbsp;Find all pets
-- `PUSH "/"`<br>&nbsp;&nbsp;Adds new pet
+- `POST "/"`<br>&nbsp;&nbsp;Adds new pet
 
 ```
 {
