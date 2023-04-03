@@ -67,7 +67,7 @@ app.put("/:id", async (req, res) => {
 app.delete("/:id", async (req, res) => {
   try {
     const id = req.params.id;
-    const pet = Pet.findById(id);
+    const pet = await Pet.findById(id);
     if (!pet) throw new Error("Pet not found!");
     await Pet.deleteOne({ _id: id });
     res.send({ message: "Pet deleted from database!" });
